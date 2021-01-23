@@ -1,90 +1,163 @@
-header {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 48px;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(160, 166, 179, 0.3);
-  font-size: 0.75rem;
-  letter-spacing: 1px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.header-logo {
-  width: 48px;
-  height: 48px;
-  background-color: #2b546a;
-  transition: all 0.2s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header-logo:hover {
-  background-color: #8be0e6;
-}
-.header-logo-img {
-  width: 45%;
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
-  vertical-align: center;
+  padding: 0;
 }
 
-.header-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10px;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
-.header-nav a {
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
   text-decoration: none;
-  padding: 18px 0;
-  margin: 0 15px;
-  color: #2b546a;
 }
 
-.account {
+header {
+  position: fixed;
+  z-index: 1000;
   display: flex;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  padding: 24px 32px;
+  background-color: #f9fbfe;
+}
+header .p-header-logo img {
+  width: 112px;
+  height: 100%;
+}
+
+.p-header-nav {
   margin-left: auto;
-  justify-content: center;
   align-items: center;
 }
-.account-img {
-  border-radius: 50%;
-  height: 33px;
-  width: 33px;
-  margin-right: 10px;
+.p-header-nav a {
+  font-size: 14px;
+  color: #2b546a;
+  border-radius: 5px;
+  padding: 14px 18px;
+  margin: 0 2px;
 }
-.account .account-status {
+.p-header-nav .c-btn1 {
+  margin-right: 0;
+  font-size: 0.75rem;
+}
+.p-header-nav span {
+  margin-left: 2px;
+}
+
+.l-top-section {
+  padding-top: 136px;
   display: flex;
-  padding: 3px 0;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
+  flex-direction: column;
+  font-weight: bold;
 }
-.account p {
-  padding-right: 15px;
-  position: relative;
+.l-top-section h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
   color: #2b546a;
 }
-.account p::after {
+.l-top-section a {
+  margin: 0 auto;
+  min-width: 200px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.progate-user {
+  display: flex;
+  margin: 16px auto 48px;
+}
+.progate-user p {
+  color: #8491a5;
+}
+.progate-user .users-icon {
+  margin-right: 20px;
+}
+.progate-user .users-icon::before {
   content: '';
   display: inline-block;
-  width: 2px;
+  width: 20px;
   height: 20px;
-  background-color: #f4f1f1;
-  position: absolute;
-  right: 0;
-}
-.account .notification-icon {
-  display: inline-block;
-  padding: 15.5px 20px;
+  background-image: url("../images/users-f8349e783e2091f6e9d6a84d6cb914d0.svg");
 }
 
-.main {
-  height: 100px;
-  width: 100px;
-  background-image: url(/images/https:/d18en44nkeqroq.cloudfront.net/paths/node/top_image.svg);
+.c-btn, .p-header-nav .c-btn1, .l-top-section a {
+  color: white;
+  background-color: #30c8d6;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  border-radius: 5px;
+  padding: 14px 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

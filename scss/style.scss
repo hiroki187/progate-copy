@@ -1,5 +1,8 @@
-@import "_header.scss";
-@import "_main.scss";
-@import "_footer.scss";
+@import "./foundtions/f-reset";
+@import "./layout/l-header";
+@import "./layout/l-main";
+@import "./layout/l-footer";
+@import "./layout/l-hamburger";
+@import "./object/component/c-btn";
 
 

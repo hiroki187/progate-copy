@@ -1,0 +1,44 @@
+
+// HEADER
+
+header {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 88px;
+    padding: 24px 32px;
+    background-color: #f9fbfe;
+    & .p-header-logo img {
+        // background: url("../images/typo_logo-7f995bc8faf05bc72aad13c551d939ef.svg");
+        // background-image: url("https://d2aj9sy12tbpym.cloudfront.net/assets/packs/dist/images/typo_logo-7f995bc8faf05bc72aad13c551d939ef.svg");
+        // background-repeat: no-repeat;
+        width: 112px;
+        height: 100%;
+    }
+}
+.p-header-nav {
+    margin-left: auto;
+    align-items: center;
+    & a {
+        font-size: 14px;
+        color: #2b546a;
+        border-radius: 5px;
+        padding: 14px 18px;
+        margin: 0 2px;
+    }
+    // & a:hover {
+    //     background: ;
+    // }
+    & .c-btn1 {
+        @extend .c-btn;
+        margin-right: 0;
+        font-size: 0.75rem;
+    }
+    & span {
+        margin-left: 2px;
+    }
+}
+
+
