@@ -1,0 +1,33 @@
+
+
+// @mixin subtitle-color {
+//     color: #2b546a;
+// }
+
+// @mixin detail-color {
+//     color: #8491a5;
+// }
+
+@mixin common-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 4.16%;
+}
+
+@mixin common-subtitle-style($color:#2b546a) {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color;
+}
+
+@mixin common-detail-style($color:#8491a5) {
+    font-size: 1rem;
+    line-height: 2;
+    color: $color;
+    margin-top: 16px;
+}
+
+$subtitle-color: #2b546a;
+$detail-color: #8491a5;
