@@ -11,7 +11,7 @@
     h2 {
         text-align: center;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 2rem;
         letter-spacing: 0.03em;
         line-height: 1.5;
         color: $subtitle-color;
@@ -31,38 +31,38 @@
         justify-content: center;
     }
     .top-img {
+        overflow: hidden;
         width: 100%;
-        // height: 100%;
         max-width: 1000px;
     }
 }
-
-
-.progate-user {
+.p-progate-users {
     display: flex;
     margin: 16px auto 48px;
-    position: relative;
+    align-items: center;    
     p {
         color: $detail-color;
-        font: 100%/1.5 "Lato", "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 0.03em;
+        span {
+            font-size: 18px;
+            color: $subtitle-color;
+        }
     }
-    .users-icon {
+    .p-users-total {
         margin-right: 20px;
     }
-    .users-icon::before {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        top: 3px;
-        left: -24px;
+    img {
         width: 20px;
-        height: 16px;
-        background: url("../images/users-f8349e783e2091f6e9d6a84d6cb914d0.svg") center center/contain no-repeat;
+        margin-right: 8px;
+        max-width: 100%;
     }
 }
 
 
-.l-curriculum-section {
+
+.p-curriculum-section {
     @include common-layout;
     h2 {
         @include common-subtitle-style;
@@ -81,26 +81,28 @@
         display: flex;
         justify-content: center;
         margin-top: 72px;
-        // width: 100%;
-        // height: 100%;
+        width: 100%;
     }
     .p-curriculum-img {
         width: 100%;
         max-width: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
 
 
-.l-success-story {
+.p-success-story {
     @include common-layout;
     background-color: $subtitle-color;
     text-align: center;
-    .success-story-subtitle {
+    h2 {
         font-size: 2rem;
         font-weight: bold;
         color: #fff;
     }
-    .success-story-detail {
+    .p-success-story-detail {
         font-size: 1rem;
         margin-top: 16px;
         color: #fff;
@@ -112,6 +114,15 @@
         gap: 32px;
         margin: 56px 0;
     }
+    .c-btn {
+        color: rgb(43, 84, 106);
+        background-color: rgb(240, 244, 249);
+        min-width: 200px;
+        height: 48px;
+        &:hover {
+            background-color: rgb(204, 217, 234);
+        }
+    }
 }
 
 
@@ -120,46 +131,49 @@
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
+    max-width: 312px;
     border-radius: 10px;
     padding: 40px 24px;
     text-align: center;
     font-weight: bold;
-    max-width: 312px;
-    .person-img-wrap {
+    .p-person-img-wrap {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 33.333%;
     }
-    .person-img {
+    .p-person-img {
         border-radius: 50%;
         width: 100px;
         height: 100px;
     }
-    .success-story-text {
+    .p-success-story-text {
         font-size: 1rem;
         color: $subtitle-color;
         margin-top: 40px;
         height: 33.333%;
     }
-    .writer-wrap {
+    .p-writer-wrap {
+        display: flex;
         height: 33.333%;
     }
-    .writer-name {
+    .p-writer-name {
         color: #bac6d3;
         margin-top: 32px;
     }
-    .writer-country {
+    .p-writer-country {
         color: #bac6d3;
         margin-top: 2px;
         font-size: 12px;
     }
 }
 
-.l-course {
+
+
+.p-course {
     @include common-layout;
 }
-.l-course-wrap {
+.p-course-wrap {
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,11 +187,16 @@
     gap: 40px;
     border-radius: 10px;
     padding: 0 40px;
-    .courese-total-content {
+    .p-course-img-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .p-course-total-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .p-course-total-subtitle {
+        h2 {
             @include common-subtitle-style;
         }
         p {
@@ -198,15 +217,15 @@
     h2 {
         @include common-subtitle-style;
     }
-    .free-course-detail {
+    .p-free-course-detail {
         @include common-detail-style;
     }
-    .free-course-lesson {
+    .p-free-course-lesson {
         @include common-detail-style($subtitle-color);
         font-weight: bold;
         margin-top: 40px;
     }
-    .free-course-fee {
+    .p-free-course-fee {
         font-weight: bold;
         font-size: 48px;
         text-align: center;
@@ -215,43 +234,46 @@
         line-height: 1;
     }
 }
-.pay-course {
+.p-pay-course {
     @extend .p-free-course;
     background-color: #f7edad;
     h2 {
         @include common-subtitle-style;
     }
-    .pay-course-detail {
+    .p-pay-course-detail {
         @include common-detail-style;
     }
-    .pay-course-lesson {
+    .p-pay-course-lesson {
         @include common-detail-style($subtitle-color);
         font-weight: bold;
         margin-top: 40px;
     }
-    .pay-course-fee {
-        @extend .free-course-fee;
-        .pay-course-fee-attachment {
+    .p-pay-course-fee {
+        @extend .p-free-course-fee;
+        .p-pay-course-fee-attachment {
             font-size: 18px;
             padding: 0 4px;
         }
     }
 }
-.dollar {
+.p-dollar {
     font-size: 32px;
     padding-right: 4px;
 }
-.course-lesson-status {
+.p-course-lesson-status {
     color: #0070d2;
     font-size: 1rem;
     span {
         margin-left: 5px;
     }
+    &:hover {
+        color: #007eec;
+    }
 }
 
 
 
-.l-mobile-app {
+.p-mobile-app {
     @include common-layout;
     h2 {
         @include common-subtitle-style;
@@ -259,7 +281,7 @@
     .p-mobile-app-detail {
         @include common-detail-style;
     }
-    .p-mobile-app {
+    .p-mobile-app-content-wrap {
         background: #90c3f0;
         display: flex;
         border-radius: 5px;
@@ -268,11 +290,12 @@
         padding: 64px 64px 0;
     }
 }
-.mobile-app-content-left {
+.p-mobile-app-content-left {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
     color: #fff;
+    text-align: left;
     h3 {
         font-size: 1.25rem;
         font-weight: bold;
@@ -281,25 +304,29 @@
         font-size: 0.875rem;
         margin-top: 16px;
     }
-    .mobile-app-content-left-second {
+    .p-mobile-app-content-left-second {
         margin-top: 40px;
     }
-    .download-type-img-wrap {
+    .p-download-type-img-wrap {
         margin-top: 190px;
         display: flex;
-        .download-type-ios-wrap {
+        .p-download-type-ios-wrap {
             margin-right: 18px;
         } 
     }
 }
+.p-mobile-app-content-right {
+    display: flex;
+    align-items: center;
+}
 
 
-.l-a {
+.p-message {
     @include common-layout;
     background: #fff;
     padding-top: 120px;
     padding-bottom: 120px;
-    .l-a-content {
+    .p-message-content {
         text-align: center;
         h2 {
             @include common-subtitle-style;
@@ -310,7 +337,7 @@
     }
 }
 
-.l-b {
+.p-sgin-up {
     @include common-layout;;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -320,15 +347,15 @@
     p {
         @include common-detail-style;
     }
-    a {
-        width: 200px;
+    .c-btn {
+        min-width: 200px;
         height: 48px;
         margin-top: 40px;
     }
 }
 
 
-.l-sns {
+.p-sns {
     display: flex;
     justify-content: center;
     padding: 48px 0;
@@ -336,15 +363,433 @@
     a:hover {
         opacity: .8;
     }
-    .twitter-img-wrap {
+    .p-twitter-img-wrap {
         margin-right: 40px;
     }
 }
 
 
-footer {
+.l-footer {
     background: #fff;
     border-top: 1px solid #eee;
     letter-spacing: 0.04em;
     font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+    .p-footer-wrap {
+        display: flex;
+        justify-content: center;
+        max-width: 970px;
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+    h4 {
+        color: $subtitle-color;
+        font-weight: normal;
+    }
+    .p-copyright {
+        font-size: 0.625rem;
+        padding-bottom: 50px;
+        margin-left: auto;
+        color: #8491a5;
+    }
+}
+.p-both-sides {
+    width: 35%;
+    .p-footer-logo-img {
+        width: 144px;
+        height: 34px;
+        height: auto;
+        padding-bottom: 48px;
+    }
+    .p-app-text {
+        margin-top: 40px;
+    }
+    .p-download-type-img-wrap {
+        display: flex;
+        margin-top: 10px;
+    }
+    .p-download-type-ios-wrap {
+        margin-right: 10px;
+    }
+    .p-business-logo-img-wrap-wrap {
+        background-color: #fff;
+        box-shadow: rgba(0,0,0,0.12) 0 1px 6px, rgba(0,0,0,0.12) 0 1px 4px;
+        border-radius: 2px;
+        padding: 20px 15px;
+        max-width: 248px;
+        margin-top: 15px;
+        &:hover {
+            box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+        }
+    }
+    .p-bsiness-text {
+        max-width: 248px;
+        margin-top: 20px;
+        background-color: #f9fbfe;
+        border-radius: 2px;
+        padding: 20px 23px;
+        font-size: 0.75rem;
+        color: #8491a5;
+    }
+}
+.p-center {
+    width: 18%;
+    h4 {
+        font-size: 1.1rem;
+    }
+    li {
+        padding-top: 10px;
+    }
+    a {
+        font-size: 0.75rem;
+        color: #6783a0;
+        &:hover {
+            color: #44dcc0;
+        }
+    }
+    .p-footer-sns {
+        margin-top: 40px;
+    }
+}
+
+/////////////////////
+///// レスポンシブ/////
+/////////////////////
+
+@include sp {
+    .sp {
+        display: none;
+    }
+    .l-top-section {
+        padding-top: 100px;
+        h2 {
+            font-size: 1.5rem;
+        }
+        .c-btn {
+            font-size: 0.75rem;
+            min-width: 110px;
+            padding: 11px 14px;
+        }
+    }
+    .p-progate-users {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        img {
+            width: 14px;
+            margin-right: 4px;
+            
+        }
+        .p-users-total {
+            margin-right: 7px;
+        }
+        p {
+            font-size: 0.8rem;
+            span {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+
+    .p-curriculum-section {
+        display: block;
+        padding: 15% 4.16%;
+        .p-subtitle-first {
+            font-size: 1.2rem;
+        }
+        h2 {
+            display: inline-block;
+            text-align: left;
+            margin: 0;
+            font-size: 18px;
+        }
+        p {
+            text-align: left;
+            font-size: 0.75rem;
+        }
+        .p-curriculum-img-wrap {
+            margin: 0;
+            overflow: auto;
+            img {
+                width: 150%;
+                margin: 32px 0 20px;
+            }
+        }
+    }
+
+
+    .p-success-story {
+        h2 {
+            font-size: 18px;
+        }
+        .p-success-story-detail {
+            font-size: 0.75rem;
+        }
+        .p-success-story-wrap {
+            grid-template-columns: 1fr;
+            grid-gap: 6vw;
+            margin: 32px 0;
+        }
+        .p-success-story-content {
+            display: grid;
+            grid-template-rows: repeat(2, auto);
+            grid-template-columns: auto 1fr;
+            padding: 24px 16px 0;
+            max-width: 100%;
+        }
+        .p-small {
+            display: none;
+        }
+        .p-person-img-wrap {
+            grid-column: 1;
+            margin-top: 18px;
+            width: fit-content;
+            .p-person-img {
+                width: 50px;
+                height: 50px;
+                margin-top: 23px;
+            }
+        }
+        .p-success-story-text {
+            margin-top: 0;
+            grid-column: 1/3;
+            grid-row: 1;
+            font-size: 0.75rem;
+            // line-height: 170%;
+            text-align: left;
+        }
+        .p-writer-wrap {
+            align-items: flex-start;
+            text-align: left;
+            flex-direction: column;
+            margin: 23px 0 0 12px;
+            grid-column: 2;
+            .p-writer-name {
+                grid-column: 2/3;
+                grid-row: 2;
+                font-size: 0.75rem;
+                margin-top: 0;
+            }
+            .p-writer-country {
+                grid-row: 3/4;
+                grid-column: 2/3;
+                font-size: 11px;
+                margin-top: 0;
+            }
+        }
+        .c-btn {
+            font-size: 0.75rem;
+            min-width: 110px;
+            height: 40px;
+        }
+    }
+
+
+    .p-course {
+        padding: 15% 6%;
+    }
+    .p-course-wrap {
+        grid-template-columns: 1fr;
+        grid-gap: 6vw;
+        margin-bottom: 16px;
+    }
+    .p-course-total {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        grid-column: 1;
+        padding-top: 48px;
+        text-align: center;
+        .p-course-img-wrap {
+            order: 2;
+        }
+        .p-course-total-content {
+            padding: 0;
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 0.75rem;
+            }
+        }
+    }
+    .p-free-course, 
+    .p-pay-course {
+        h2 {
+            font-size: 18px;
+        }
+        .p-free-course-detail, 
+        .p-pay-course-detail {
+            font-size: 0.75rem;
+            margin-top: 8px;
+        }
+        .p-free-course-lesson, 
+        .p-pay-course-lesson {
+            font-size: 0.75rem;
+            margin-top: 40px;
+
+        }
+        .p-free-course-fee, 
+        .p-pay-course-fee {
+            font-size: 32px;
+            .p-pay-course-fee-attachment {
+                font-size: 12px;
+            }
+        }
+    }
+    .p-dollar {
+    font-size: 24px;
+    }
+    .p-course-lesson-status {
+        font-size: 0.75rem;
+        margin-top: 8px;
+    }
+
+
+    .p-mobile-app {
+        display: block;
+        text-align: center;
+        padding: 0 6% 15% 6%;
+        h2 {
+            font-size: 18px;
+        }
+        .p-mobile-app-detail {
+            font-size: 0.75rem;
+            margin-top: 8px;
+        }
+        .p-mobile-app-content-wrap {
+            padding: 32px 7% 40px;
+            flex-direction: column-reverse;
+            margin-top: 40px;
+        }
+    }
+    .p-mobile-app-content-left {
+        min-width: initial;
+        margin-right: 0;
+        h3 {
+            font-size: 1rem;
+            margin-right: 0;
+        }
+        p {
+            font-size: 0.75rem;
+            margin-top: 8px;
+        }
+        .p-mobile-app-content-left-first {
+            margin-top: 0;
+        }
+        .p-mobile-app-content-left-second {
+            margin-top: 24px;
+        }
+        .p-download-type-img-wrap {
+            margin: 40px 0 0;
+            .p-download-type-ios-wrap {
+                margin-right: 12px;
+            }
+        }
+    }
+    .p-mobile-app-content-right {
+        max-width: 300px;
+    }
+
+
+    .p-message {
+        padding: 19% 6%;
+        .p-message-content {
+            text-align: left;
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                margin-top: 24px;
+                font-size: 0.75rem;
+            }
+        }
+    }
+
+
+    .p-sgin-up {
+        padding: 19% 6%;
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 0.75rem;
+            margin: 8px 0 24px;
+        }
+        .c-btn {
+            font-size: 0.75rem;
+            width: 110px;
+            height: 40px;
+            margin: 0;
+        }
+    }
+
+
+    .p-sns {
+        padding: 32px 0;
+        .p-twitter-img-wrap, 
+        .p-facebook-img-wrap {
+            width: 20px;
+        }
+    }
+
+
+    .l-footer {
+        padding: 15px auto;
+        .p-footer-wrap {
+            text-align: center;
+            margin-top: 15px;
+            flex-direction: column;
+        }
+        .p-copyright {
+            display: block;
+            margin-top: 45px;
+            font-size: 0.625rem;
+            text-align: center;
+            p {
+                display: inline-block;
+            }
+        }
+    }
+    .p-both-sides {
+        width: auto;
+        justify-content: center;
+        .p-footer-logo-img {
+            margin: 10px auto 0;
+            width: 125px;
+            padding-bottom: 24px;
+        }
+        .p-app-text {
+            margin: 50px 0 10px;
+            text-align: center;
+        }
+        .p-download-type-img-wrap {
+            margin: 0 auto 50px;
+            justify-content: center;
+            .p-download-type-ios-wrap {
+                margin: 0 10px 5px 0;
+            }
+        }
+        h4 {
+            margin-bottom: 15px;
+        }
+        .p-business-logo-img-wrap-wrap {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .p-bsiness-text {
+            display: block;
+            margin: 20px auto 0;
+        }
+    }
+    .p-center {
+        width: auto;
+        h4 {
+            font-size: 1.1rem;
+        }
+        .p-center-content {
+            li:last-child  {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
 }

@@ -1,12 +1,18 @@
 
 
-// @mixin subtitle-color {
-//     color: #2b546a;
-// }
+$pc: 1200px;
+$sp: 768px;  // スマホ
 
-// @mixin detail-color {
-//     color: #8491a5;
-// }
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
 
 @mixin common-layout {
     display: flex;

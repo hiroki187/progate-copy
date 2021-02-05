@@ -1,38 +1,77 @@
 
 // HEADER
 
-header {
+.l-header {
     position: fixed;
     z-index: 1000;
     display: flex;
     align-items: center;
     width: 100%;
-    height: 88px;
     padding: 24px 32px;
     background-color: #f9fbfe;
     .p-header-logo-img {
         width: 112px;
         height: 100%;
     }
+    .p-header-logo-small {
+        display: none;
+    }
     .c-btn {
         margin-right: 0;
         font-size: 0.75rem;
         padding: 11px 18px;
+        max-width: 110px;
     }
-}
-.p-header-nav {
-    margin-left: auto;
-    align-items: center;
-    a {
-        font-size: 14px;
-        color: $subtitle-color;
-        border-radius: 5px;
-        padding: 14px 18px;
-        margin: 0 2px;
-    }
-    span {
-        margin-left: 2px;
+    .p-header-nav {
+        margin-left: auto;
+        align-items: center;
+        display: flex;
+        a {
+            padding: 14px 16px;
+            color: $subtitle-color;
+            font-size: 14px;
+            margin: 0 8px;
+            border-radius: 5px;
+            &:hover {
+                background: #f0f5fd;
+            }
+        }
+        span {
+            margin-left: 2px;
+        }
     }
 }
 
 
+
+
+/////////////////////
+///// レスポンシブ/////
+/////////////////////
+
+
+@include sp {
+    .l-header {
+        padding: 12px 25px;
+        .c-btn {
+            padding: 7px 12;
+        }
+        .p-header-logo-small {
+            display: inline-block;
+            width: 20px;
+        }
+    }
+    .p-header-logo-img {
+        display: none;
+    }
+    .p-header-nav {
+        a {
+            font-size: 12px;
+            padding: 0 8px;
+        }
+    }
+    .p-small {
+        display: none;
+    }
+    
+}

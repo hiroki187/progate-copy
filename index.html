@@ -10,26 +10,40 @@
 </head>
 
 <body>
-    <header>
+    <header class="l-header">
         <a class="p-header-logo-img-wrap" href="">
             <img class="p-header-logo-img" src="./images/typo_logo-7f995bc8faf05bc72aad13c551d939ef.svg" alt="">
+            <img class="p-header-logo-small" src="./images/symbol_logo-8910427a85fe195bfea5f840b0c671e9.svg">
         </a>
         <ul class="p-header-nav">
-            <a href="">法人プラン</a>
-            <a href="">言語<span><i class="fas fa-caret-down"></i></span></a>
-            <a href="">ログイン</a>
+            <li class="p-small">
+                <a href="">法人プラン</a>
+            </li>
+            <li>
+                <a href="">言語<span><i class="fas fa-caret-down"></i></span></a>
+            </li>
+            <li>
+                <a href="">ログイン</a>
+            </li>
         </ul>
         <a class="c-btn" href="">無料会員登録</a>
     </header>
+
     <div class="l-main">
         <section class="l-top-section">
-            <h2 class="c-subtitle">
+            <h2 class="p-subtitle">
                 プログラミングで<br>
                 人生の可能性を広げよう
             </h2>
-            <div class="progate-user">
-                <p class="users-icon">1,900,000ユーザー</p>
-                <p class="countries-icon">提供国数100+</p>
+            <div class="p-progate-users">
+                <img class="p-users-img" src="./images/users-f8349e783e2091f6e9d6a84d6cb914d0.svg" alt="">
+                <p class="p-users-total">
+                    <span>1,900,000</span>ユーザー
+                </p>
+                <img class="p-countries-img" src="./images/countries-25dcf2bd3ea617a63080d7ac8e2baed4.svg" alt="">
+                <p class="p-countries-total">
+                    提供国数<span>100+</span>
+                </p>
             </div>
             <a class="c-btn" href="">今すぐはじめる</a>
             <div class="top-img-wrap">
@@ -37,14 +51,14 @@
             </div>
         </section>
         
-        <section class="l-curriculum-section">
-            <h2 class="p-subtitle">初心者から、創れる人に</h2>
+        <section class="p-curriculum-section">
+            <h2 class="p-subtitle-first">初心者から、創れる人に</h2>
             <div class="p-curriculum-img-wrap">
                 <img class="p-curriculum-img" src="./images/slide_image_jp-fe8d53e1a8a892cd55002e6eed6c757e.jpg" alt="">
             </div>
             <h2 class="p-subtitle">イラスト中心のスライドで学ぶ</h2>
             <p class="p-detail">
-                紙の本よりも直感的で、動画よりも学びやすい、「スライド学習」を採用しました。<br>
+                紙の本よりも直感的で、動画よりも学びやすい、「スライド学習」を採用しました。<br class="sp">
                 自分のペースで学習できること、復習しやすいことが強みです。
             </p>
             <div class="p-curriculum-img-wrap">
@@ -52,7 +66,7 @@
             </div>
             <h2 class="p-subtitle">すぐに実践</h2>
             <p class="p-detail">
-                実際にプロダクトを作りながら学ぶから、使えるスキルが身につきます。<br>
+                実際にプロダクトを作りながら学ぶから、使えるスキルが身につきます。<br class="sp">
                 ブラウザ上で、コードを書いて結果も確認。
                 準備いらずで、すぐにプログラミングが実践できます。
             </p>
@@ -61,181 +75,157 @@
             </div>
             <h2 class="p-subtitle">道のりに沿って学ぶ</h2>
             <p class="p-detail">
-                「創れる人」になるために必要なレッスンを最適な順番で学ぶことができます。<br>
+                「創れる人」になるために必要なレッスンを最適な順番で学ぶことができます。<br class="sp">
                 最終的には自分自身でエラーを解決して、目標に向かって自ら走りきる能力が身につきます。
             </p>
 
         </section>
 
-        <section class="l-success-story">
-            <h2 class="success-story-subtitle">サクセスストーリー</h2>
-            <p class="success-story-detail">プログラミングの世界への第一歩を踏み出し、夢を実現した方々のサクセスストーリーを紹介します。</p>
+        <section class="p-success-story">
+            <h2 class="p-success-story-subtitle">サクセスストーリー</h2>
+            <p class="p-success-story-detail">プログラミングの世界への第一歩を踏み出し、夢を実現した方々のサクセスストーリーを紹介します。</p>
             <div class="p-success-story-wrap">
-                <div class="p-success-story-content">
-                    <a href="">
-                        <div>
-                            <div class="person-img-wrap">
-                                <img class="person-img" src="./images/person1.png" alt="">
-                            </div>
-                            <p class="success-story-text">
-                                「プログラミングで人生180度変わった。」小学生がJavaScriptでゲーム開発するようになるまで
-                            </p>
-                            <div class="writer-wrap">
-                                <p class="writer-name">村馬弘一</p>
-                                <p class="writer-country">Japan</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="p-success-story-content">
-                    <a href="">
-                        <div>
-                            <div class="person-img-wrap">
-                                <img class="person-img" src="./images/person2.png" alt="">
-                            </div>
-                            <p class="success-story-text">
-                                「プログラミングはもうやりたくなかったけど必要に迫られて」 mikan グロースハッカーの超実践SQL活用法
-                            </p>
-                            <div class="writer-wrap">
-                                <p class="writer-name">飯田 諒</p>
-                                <p class="writer-country">Japan</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="p-success-story-content">
-                    <a href="">
-                        <div>
-                            <div class="person-img-wrap">
-                                <img class="person-img" src="./images/person3.png" alt="">
-                            </div>
-                            <p class="success-story-text">
-                                「私、プログラミングできるかも。」アプリ版Progateから２ヶ月で、アイドルからエンジニアに転職した話
-                            </p>
-                            <div class="writer-wrap">
-                                <p class="writer-name">五十嵐 夏菜</p>
-                                <p class="writer-country">Japan</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="p-success-story-content">
-                    <a href="">
-                        <div>
-                            <div class="person-img-wrap">
-                                <img class="person-img" src="./images/person4.jpg" alt="">
-                            </div>
-                            <p class="success-story-text">
-                                「起業準備はProgateしかしてません」 YOUTRUST代表　岩崎由夏のプログラミング勉強法
-                            </p>
-                            <div class="writer-wrap">
-                                <p class="writer-name">岩崎 由夏</p>
-                                <p class="writer-country">Japan</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="p-success-story-content">
-                    <a href="">
-                        <div>
-                            <div class="person-img-wrap">
-                                <img class="person-img" src="./images/person5.jpg" alt="">
-                            </div>
-                            <p class="success-story-text">
-                                「夢みていたところで働けるのは幸せです」プログラミング未経験者が憧れのBASEで働くまで
-                            </p>
-                            <div class="writer-wrap">
-                                <p class="writer-name">三佐和 千鶴</p>
-                                <p class="writer-country">Japan</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="p-success-story-content">
-                    <a href="">
-                        <div>
-                            <div class="person-img-wrap">
-                                <img class="person-img" src="./images/person6.jpg" alt="">
-                            </div>
-                            <p class="success-story-text">
-                                「教育現場にエンジニア経験を還元したい！」元小学校教員エンジニアが叶えたい夢とは
-                            </p>
-                            <div class="writer-wrap">
-                                <p class="writer-name">三浦卓馬</p>
-                                <p class="writer-country">Japan</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <a class="p-success-story-content" href="">
+                    <div class="p-person-img-wrap">
+                        <img class="p-person-img" src="./images/person1.png" alt="">
+                    </div>
+                    <p class="p-success-story-text">
+                        「プログラミングで人生180度変わった。」小学生がJavaScriptでゲーム開発するようになるまで
+                    </p>
+                    <div class="p-writer-wrap">
+                        <p class="p-writer-name">村馬弘一</p>
+                        <p class="p-writer-country">Japan</p>
+                    </div>
+                </a>
+                <a class="p-success-story-content" href="">
+                    <div class="p-person-img-wrap">
+                        <img class="p-person-img" src="./images/person2.png" alt="">
+                    </div>
+                    <p class="p-success-story-text">
+                        「プログラミングはもうやりたくなかったけど必要に迫られて」 mikan グロースハッカーの超実践SQL活用法
+                    </p>
+                    <div class="p-writer-wrap">
+                        <p class="p-writer-name">飯田 諒</p>
+                        <p class="p-writer-country">Japan</p>
+                    </div>
+                </a>
+                <a class="p-success-story-content" href="">
+                    <div class="p-person-img-wrap">
+                        <img class="p-person-img" src="./images/person3.png" alt="">
+                    </div>
+                    <p class="p-success-story-text">
+                        「私、プログラミングできるかも。」アプリ版Progateから２ヶ月で、アイドルからエンジニアに転職した話
+                    </p>
+                    <div class="p-writer-wrap">
+                        <p class="p-writer-name">五十嵐 夏菜</p>
+                        <p class="p-writer-country">Japan</p>
+                    </div>
+                </a>
+                <a class="p-success-story-content p-small" href="">
+                    <div class="p-person-img-wrap">
+                        <img class="p-person-img" src="./images/person4.jpg" alt="">
+                    </div>
+                    <p class="p-success-story-text">
+                        「起業準備はProgateしかしてません」YOUTRUST代表 岩崎由夏のプログラミング勉強法
+                    </p>
+                    <div class="p-writer-wrap">
+                        <p class="p-writer-name">岩崎 由夏</p>
+                        <p class="p-writer-country">Japan</p>
+                    </div>
+                </a>
+                <a class="p-success-story-content p-small" href="">
+                    <div class="p-person-img-wrap">
+                        <img class="p-person-img" src="./images/person5.jpg" alt="">
+                    </div>
+                    <p class="p-success-story-text">
+                        「夢みていたところで働けるのは幸せです」プログラミング未経験者が憧れのBASEで働くまで
+                    </p>
+                    <div class="p-writer-wrap">
+                        <p class="p-writer-name">三佐和 千鶴</p>
+                        <p class="p-writer-country">Japan</p>
+                    </div>
+                </a>
+                <a class="p-success-story-content p-small" href="">
+                    <div class="p-person-img-wrap">
+                        <img class="p-person-img" src="./images/person6.jpg" alt="">
+                    </div>
+                    <p class="p-success-story-text">
+                        「教育現場にエンジニア経験を還元したい！」元小学校教員エンジニアが叶えたい夢とは
+                    </p>
+                    <div class="p-writer-wrap">
+                        <p class="p-writer-name">三浦卓馬</p>
+                        <p class="p-writer-country">Japan</p>
+                    </div>
+                </a>
             </div>
+            <a class="c-btn" href="">もっと見る</a>
         </section>
 
-        <section class="l-course">
-            <div class="l-course-wrap">
+        <section class="p-course">
+            <div class="p-course-wrap">
                 <div class="p-course-total">
-                    <div class="p-courese-img-wrap">
+                    <div class="p-course-img-wrap">
                         <img class="p-courese-img" src="./images/course-img 2021-01-28 1.36.54.png" alt="">
                     </div>
-                    <div class="courese-total-content">
-                        <h2 class="p-course-total-subtitle">あなたに合ったレッスンが<br>
+                    <div class="p-course-total-content">
+                        <h2>あなたに合ったレッスンが<br>
                             きっと見つかる</h2>
                         <p>全15コース・82レッスン</p>
                     </div>
                 </div>
                 <div class="p-free-course">
                     <h2>無料会員</h2>
-                    <p class="free-course-detail">プログラミングに触れ<br>
+                    <p class="p-free-course-detail">プログラミングに触れ<br>
                         「基礎」を身につける</p>
-                    <p class="free-course-lesson">基礎レベルの18レッスン<br>
+                    <p class="p-free-course-lesson">基礎レベルの18レッスン<br>
                         (各コースの最初のレッスン+α)</p>
-                    <p class="free-course-fee">
-                        <span class="dollar">¥</span>0
+                    <p class="p-free-course-fee">
+                        <span class="p-dollar">¥</span>0
                     </p>
                 </div>
-                <div class="pay-course">
+                <div class="p-pay-course">
                     <h2>プラス会員</h2>
-                    <p class="pay-course-detail">「応用」と「実践」で<br>
+                    <p class="p-pay-course-detail">「応用」と「実践」で<br>
                         創る力を身につける</p>
-                    <p class="pay-course-lesson">公開中の82レッスンすべて</p>
-                    <p class="pay-course-fee">
-                        <span class="pay-course-fee-attachment">税別</span><span class="dollar">¥</span>980<span class="pay-course-fee-attachment">/月</span>
+                    <p class="p-pay-course-lesson">公開中の82レッスンすべて</p>
+                    <p class="p-pay-course-fee">
+                        <span class="p-pay-course-fee-attachment">税別</span><span class="p-dollar">¥</span>980<span class="p-pay-course-fee-attachment">/月</span>
                     </p>
                 </div>
-                <a class="course-lesson-status" href="">レッスンの公開状況<span><i class="fas fa-external-link-alt"></i></span></a>
+                <a class="p-course-lesson-status" href="">レッスンの公開状況<span><i class="fas fa-external-link-alt"></i></span></a>
             </div>
         </section>
 
-        <section class="l-mobile-app">
+        <section class="p-mobile-app">
             <h2>アプリでも、Progate</h2>
             <p class="p-mobile-app-detail">「まずは気軽に始めてみたい」という方にオススメです。</p>
-            <div class="p-mobile-app">
-                <div class="mobile-app-content-left">
-                    <div class="mobile-app-content-left-first">
+            <div class="p-mobile-app-content-wrap">
+                <div class="p-mobile-app-content-left">
+                    <div class="p-mobile-app-content-left-first">
                         <h3>いつでもどこでもプログラミング</h3>
                         <p>まとまった時間がなくても大丈夫。アプリならスマホゲーム感覚で楽しく始められます。</p>
                     </div>
-                    <div class="mobile-app-content-left-second">
+                    <div class="p-mobile-app-content-left-second">
                         <h3>アプリならではの学習体験</h3>
                         <p>スマホやタブレットの画面に最適化したスライドとキーボードを用意しています。アプリ版でサクっと理解したら、Web版で本格的に実践するのがオススメです。</p>
                     </div>
-                    <div class="download-type-img-wrap">
-                        <a class="download-type-ios-wrap" href="">
-                            <img class="download-type-ios" src="./images/download-ios-3540d9bdb3702fa6e9b007e962b1a645.svg" alt="">
+                    <div class="p-download-type-img-wrap">
+                        <a class="p-download-type-ios-wrap" href="">
+                            <img class="p-download-type-ios" src="./images/download-ios-3540d9bdb3702fa6e9b007e962b1a645.svg" alt="">
                         </a>
-                        <a class="download-type-android-wrap" href="">
-                            <img class="download-type-android" src="./images/download-android-903661e45b5ca20e8f6ac3936ddebaa2.svg" alt="">
+                        <a class="p-download-type-android-wrap" href="">
+                            <img class="p-download-type-android" src="./images/download-android-903661e45b5ca20e8f6ac3936ddebaa2.svg" alt="">
                         </a>
                     </div>
                 </div>
-                <!-- <div class="mobile-app-content-right"></div> -->
-                <div class="mobile-app-content-right">
-                    <img class="mobile-img" src="./images/app_image_jp-138257e7b2bbfa7c840ca9fcf7abc8b1.png" alt="">
+                <div class="p-mobile-app-content-right">
+                    <img class="p-mobile-img" src="./images/app_image_jp-138257e7b2bbfa7c840ca9fcf7abc8b1.png" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="l-a">
-            <div class="l-a-content">
+        <section class="p-message">
+            <div class="p-message-content">
                 <h2>初心者から、創れる人を生み出す</h2>
                 <p>初心者でも独学で、挫折せずに学べること。<br>
                     そして、本物のスキルが身につき 「創れる」ようになること。
@@ -246,39 +236,41 @@
             </div>
         </section>
 
-        <section class="l-b">
+        <div class="p-sgin-up">
             <h2>さっそく始めよう</h2>
             <p>１分後、プログラミングの世界でお会いしましょう。</p>
             <a class="c-btn" href="">無料会員登録</a>
-        </section>
-        <div class="l-sns">
-            <a class="twitter-img-wrap" href="">
-                <img class="twitter-img" src="./images/twitter-4f8969c269394baf0d22d64d444a2b22.svg" alt="">
+        </div>
+
+        <div class="p-sns">
+            <a class="p-twitter-img-wrap" href="">
+                <img class="p-twitter-img" src="./images/twitter-4f8969c269394baf0d22d64d444a2b22.svg" alt="">
             </a>
-            <a class="facebook-img-wrap" href="">
-                <img class="facebook-img" src="./images/facebook-052c2b532c7dd80a5f78f97281b0fa20.svg" alt="">
+            <a class="p-facebook-img-wrap" href="">
+                <img class="p-facebook-img" src="./images/facebook-052c2b532c7dd80a5f78f97281b0fa20.svg" alt="">
             </a>
         </div>
     </div>
-    <footer>
-        <div class="footer-wrap">
+
+    <footer class="l-footer">
+        <div class="p-footer-wrap">
             <div class="p-both-sides">
-                <a class="footer-logo-img-wrap" href="">
-                    <img class="footer-logo-img" src="./images/typo_logo-7f995bc8faf05bc72aad13c551d939ef.svg" alt="">
+                <a class="p-footer-logo-img-wrap" href="">
+                    <img class="p-footer-logo-img" src="./images/typo_logo-7f995bc8faf05bc72aad13c551d939ef.svg" alt="">
                 </a>
-                <p>アプリ版のダウンロードはこちら</p>
-                <div class="download-type-img-wrap">
-                    <a class="download-type-ios-wrap" href="">
-                        <img class="download-type-ios" src="./images/download-ios-3540d9bdb3702fa6e9b007e962b1a645.svg" alt="">
+                <p class="p-app-text">アプリ版のダウンロードはこちら</p>
+                <div class="p-download-type-img-wrap">
+                    <a class="p-download-type-ios-wrap" href="">
+                        <img class="p-download-type-ios" src="./images/download-ios-3540d9bdb3702fa6e9b007e962b1a645.svg" alt="">
                     </a>
-                    <a class="download-type-android-wrap" href="">
-                        <img class="download-type-android" src="./images/download-android-903661e45b5ca20e8f6ac3936ddebaa2.svg" alt="">
+                    <a class="p-download-type-android-wrap" href="">
+                        <img class="p-download-type-android" src="./images/download-android-903661e45b5ca20e8f6ac3936ddebaa2.svg" alt="">
                     </a>
                 </div>
             </div>
             <div class="p-center">
                 <h4>サービス</h4>
-                <ul>
+                <ul class="p-center-content">
                     <li>
                         <a href="">コース一覧</a>
                     </li>
@@ -301,7 +293,7 @@
             </div>
             <div class="p-center">
                 <h4>サポート</h4>
-                <ul>
+                <ul class="p-center-content">
                     <li>
                         <a href="">運営会社</a>
                     </li>
@@ -321,8 +313,8 @@
                         <a href="">プライバシーポリシー</a>
                     </li>
                 </ul>
-                <h4>SNS</h4>
-                <ul>
+                <h4 class="p-footer-sns">SNS</h4>
+                <ul class="p-center-content">
                     <li>
                         <a href="">Facebook</a>
                     </li>
@@ -331,18 +323,20 @@
                     </li>
                 </ul>
             </div>
-            <div class="p-both-side">
-                <h4></h4>
-                <a href="">
-                    <img src="" alt="">
-                </a>
-                <div>
-                    <p></p>
+            <div class="p-both-sides">
+                <h4>法人向けサービス</h4>
+                <div class="p-business-logo-img-wrap-wrap">
+                    <a class="p-business-logo-img-wrap" href="">
+                        <img class="p-business-logo-img" src="./images/biz_logo_ja-98cf7067364efcd4f1899de2266450871bcdd0a0c617517ac3ae738aaa340963.svg" alt="">
+                    </a>
+                </div>
+                <div class="p-bsiness-text">
+                    <p>企業のプログラミング研修を支援する、法人のお客様向けの利用プランです。</p>
                 </div>
             </div>
-            <div class="copyright">
-
-            </div>
+        </div>
+        <div class="p-copyright">
+            <p>© 2014 Progate, Inc.</p>
         </div>
     </footer>
 </body>
