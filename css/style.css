@@ -588,6 +588,7 @@ a {
   font-weight: normal;
 }
 .l-footer .p-copyright {
+  display: block;
   font-size: 0.625rem;
   padding-bottom: 50px;
   margin-left: auto;
