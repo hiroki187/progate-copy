@@ -37,10 +37,46 @@
             }
         }
         span {
-            margin-left: 2px;
+            margin-left: 5px;
         }
     }
 }
+.p-language {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .p-language-text-wrap {
+        box-shadow: 0px 0px 20px #E4E7EA;
+        position: absolute;
+        top: 45px;
+        left: 15px;
+        width: 165px;
+        height: 51px;
+        min-width: 165px;
+        background-color: rgb(255, 255, 255);
+        a {
+            box-shadow: 0px 0px 20px #E4E7EA;
+            transition: all 0.3s ease 0s;
+            line-height: 1.7;
+            padding: 14px 20px;
+            color: rgb(88, 118, 163);
+            display: block;
+            margin: 0;
+            background: rgb(255, 255, 255);
+            border-radius: 2px;
+            // background-color: rgb(240, 244, 249);
+            &:first-child {
+                background-color: rgb(240, 244, 249);
+            }
+        }
+    }
+}
+
+// .active-language {
+
+// }
+
+
 
 
 
