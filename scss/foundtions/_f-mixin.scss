@@ -35,5 +35,21 @@ $sp: 768px;  // スマホ
     margin-top: 16px;
 }
 
+// @mixin btn {
+//   color: rgb(255, 255, 255);
+//   background-color: rgb(48, 200, 214);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   font-weight: bold;
+//   font-size: 0.875rem;
+//   letter-spacing: 0.02em;
+//   border-radius: 5px;
+//   &:hover {
+//       background-color: rgb(35, 164, 176);
+//   }
+// }
+
 $subtitle-color: #2b546a;
 $detail-color: #8491a5;

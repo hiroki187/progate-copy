@@ -1,7 +1,7 @@
 
 // MAIN
 
-.l-top-section {
+.p-top-top-section {
     padding-top: 136px;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
         min-width: 200px;
         padding: 13px 15px;
     }
-    .top-img-wrap {
+    .p-top-top-img-wrap {
         margin-top: 64px;
         width: 100%;
         height: 100%;
@@ -30,13 +30,13 @@
         display: flex;
         justify-content: center;
     }
-    .top-img {
+    .p-top-top-img {
         overflow: hidden;
         width: 100%;
         max-width: 1000px;
     }
 }
-.p-progate-users {
+.p-top-progate-users {
     display: flex;
     margin: 16px auto 48px;
     align-items: center;    
@@ -50,7 +50,7 @@
             color: $subtitle-color;
         }
     }
-    .p-users-total {
+    .p-top-users-total {
         margin-right: 20px;
     }
     img {
@@ -62,7 +62,7 @@
 
 
 
-.p-curriculum-section {
+.p-top-curriculum-section {
     @include common-layout;
     h2 {
         @include common-subtitle-style;
@@ -77,23 +77,22 @@
         justify-content: center;
         text-align: center;
     }
-    .p-curriculum-img-wrap {
+    .p-top-curriculum-img-wrap {
         display: flex;
-        justify-content: center;
         margin-top: 72px;
         width: 100%;
-    }
-    .p-curriculum-img {
-        width: 100%;
-        max-width: 1000px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        img {
+            width: 100%;
+            max-width: 1000px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
     }
 }
 
 
-.p-success-story {
+.p-top-success-story {
     @include common-layout;
     background-color: $subtitle-color;
     text-align: center;
@@ -102,12 +101,12 @@
         font-weight: bold;
         color: #fff;
     }
-    .p-success-story-detail {
+    .p-top-success-story-detail {
         font-size: 1rem;
         margin-top: 16px;
         color: #fff;
     }
-    .p-success-story-wrap {
+    .p-top-success-story-wrap {
         max-width: 1000px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -126,7 +125,7 @@
 }
 
 
-.p-success-story-content {
+.p-top-success-story-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -140,32 +139,32 @@
     &:hover {
         transform: scale(1.01) translate3d(0, -2px, 0);
     }
-    .p-person-img-wrap {
+    .p-top-person-img-wrap {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 33.333%;
     }
-    .p-person-img {
+    .p-top-person-img {
         border-radius: 50%;
         width: 100px;
         height: 100px;
     }
-    .p-success-story-text {
+    .p-top-success-story-text {
         font-size: 1rem;
         color: $subtitle-color;
         margin-top: 40px;
         height: 33.333%;
     }
-    .p-writer-wrap {        
+    .p-top-writer-wrap {        
         height: 33.333%;
         width: 100%;
     }
-    .p-writer-name {
+    .p-top-writer-name {
         color: #bac6d3;
         margin-top: 32px;
     }
-    .p-writer-country {
+    .p-top-writer-country {
         color: #bac6d3;
         margin-top: 2px;
         font-size: 12px;
@@ -174,16 +173,16 @@
 
 
 
-.p-course {
+.p-top-course {
     @include common-layout;
 }
-.p-course-wrap {
+.p-top-course-wrap {
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
-.p-course-total {
+.p-top-course-total {
     background-color: #f0f4f9;
     grid-column: 1/3;
     display: grid;
@@ -191,12 +190,12 @@
     gap: 40px;
     border-radius: 10px;
     padding: 0 40px;
-    .p-course-img-wrap {
+    .p-top-course-img-wrap {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .p-course-total-content {
+    .p-top-course-total-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -208,7 +207,7 @@
         }
     }
 }
-.p-free-course {
+.p-top-free-course {
     background-color: #f0f4f9;
     padding: 80px 16px 64px;
     border-radius: 10px;
@@ -221,15 +220,15 @@
     h2 {
         @include common-subtitle-style;
     }
-    .p-free-course-detail {
+    .p-top-free-course-detail {
         @include common-detail-style;
     }
-    .p-free-course-lesson {
+    .p-top-free-course-lesson {
         @include common-detail-style($subtitle-color);
         font-weight: bold;
         margin-top: 40px;
     }
-    .p-free-course-fee {
+    .p-top-free-course-fee {
         font-weight: bold;
         font-size: 48px;
         text-align: center;
@@ -238,33 +237,33 @@
         line-height: 1;
     }
 }
-.p-pay-course {
-    @extend .p-free-course;
+.p-top-pay-course {
+    @extend .p-top-free-course;
     background-color: #f7edad;
     h2 {
         @include common-subtitle-style;
     }
-    .p-pay-course-detail {
+    .p-top-pay-course-detail {
         @include common-detail-style;
     }
-    .p-pay-course-lesson {
+    .p-top-pay-course-lesson {
         @include common-detail-style($subtitle-color);
         font-weight: bold;
         margin-top: 40px;
     }
-    .p-pay-course-fee {
-        @extend .p-free-course-fee;
-        .p-pay-course-fee-attachment {
+    .p-top-pay-course-fee {
+        @extend .p-top-free-course-fee;
+        .p-top-pay-course-fee-attachment {
             font-size: 18px;
             padding: 0 4px;
         }
     }
 }
-.p-dollar {
+.p-top-dollar {
     font-size: 32px;
     padding-right: 4px;
 }
-.p-course-lesson-status {
+.p-top-course-lesson-status {
     color: #0070d2;
     font-size: 1rem;
     span {
@@ -277,15 +276,15 @@
 
 
 
-.p-mobile-app {
+.p-top-mobile-app {
     @include common-layout;
     h2 {
         @include common-subtitle-style;
     }
-    .p-mobile-app-detail {
+    .p-top-mobile-app-detail {
         @include common-detail-style;
     }
-    .p-mobile-app-content-wrap {
+    .p-top-mobile-app-content-wrap {
         background: #90c3f0;
         display: flex;
         border-radius: 5px;
@@ -294,7 +293,7 @@
         padding: 64px 64px 0;
     }
 }
-.p-mobile-app-content-left {
+.p-top-mobile-app-content-left {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
@@ -308,29 +307,29 @@
         font-size: 0.875rem;
         margin-top: 16px;
     }
-    .p-mobile-app-content-left-second {
+    .p-top-mobile-app-content-left-second {
         margin-top: 40px;
     }
-    .p-download-type-img-wrap {
+    .p-top-download-type-img-wrap {
         margin-top: 190px;
         display: flex;
-        .p-download-type-ios-wrap {
+        .p-top-download-type-ios-wrap {
             margin-right: 18px;
         } 
     }
 }
-.p-mobile-app-content-right {
+.p-top-mobile-app-content-right {
     display: flex;
     align-items: center;
 }
 
 
-.p-message {
+.p-top-message {
     @include common-layout;
     background: #fff;
     padding-top: 120px;
     padding-bottom: 120px;
-    .p-message-content {
+    .p-top-message-content {
         text-align: center;
         h2 {
             @include common-subtitle-style;
@@ -341,7 +340,7 @@
     }
 }
 
-.p-sgin-up {
+.p-top-sgin-up {
     @include common-layout;;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -359,7 +358,7 @@
 }
 
 
-.p-sns {
+.p-top-sns {
     display: flex;
     justify-content: center;
     padding: 48px 0;
@@ -367,7 +366,7 @@
     a:hover {
         opacity: .8;
     }
-    .p-twitter-img-wrap {
+    .p-top-twitter-img-wrap {
         margin-right: 40px;
     }
 }
@@ -378,7 +377,7 @@
     border-top: 1px solid #eee;
     letter-spacing: 0.04em;
     font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
-    .p-footer-wrap {
+    .p-top-footer-wrap {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -391,33 +390,33 @@
         color: $subtitle-color;
         font-weight: normal;
     }
-    .p-copyright {
+    .p-top-copyright {
         width: 100%;
         font-size: 0.625rem;
         color: $detail-color;
         text-align: left;
     }
 }
-.p-both-sides {
+.p-top-both-sides {
     width: 33.33333333%;
     padding: 0 15px;
-    .p-footer-logo-img {
+    .p-top-footer-logo-img {
         width: 144px;
         height: 34px;
         height: auto;
         padding-bottom: 48px;
     }
-    .p-app-text {
+    .p-top-app-text {
         margin-top: 40px;
     }
-    .p-download-type-img-wrap {
+    .p-top-download-type-img-wrap {
         display: flex;
         margin-top: 10px;
     }
-    .p-download-type-ios-wrap {
+    .p-top-download-type-ios-wrap {
         margin-right: 10px;
     }
-    .p-business-logo-img-wrap-wrap {
+    .p-top-business-logo-img-wrap-wrap {
         background-color: #fff;
         box-shadow: rgba(0,0,0,0.12) 0 1px 6px, rgba(0,0,0,0.12) 0 1px 4px;
         border-radius: 2px;
@@ -428,7 +427,7 @@
             box-shadow: 0 3px 20px rgba(0,0,0,0.16);
         }
     }
-    .p-bsiness-text {
+    .p-top-bsiness-text {
         max-width: 248px;
         margin-top: 20px;
         background-color: #f9fbfe;
@@ -438,7 +437,7 @@
         color: #8491a5;
     }
 }
-.p-center {
+.p-top-center {
     width: 16.66666667%;
     h4 {
         font-size: 1.1rem;
@@ -453,9 +452,27 @@
             color: #44dcc0;
         }
     }
-    .p-footer-sns {
+    .p-top-footer-sns {
         margin-top: 40px;
     }
+}
+
+
+.p-top-opinion {
+    z-index: 900;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 12px;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    background-color: #ff577b;
+    color: #fff;
+    font-size: 0.75rem;
+    width: 120px;
+    height: 34px;
 }
 
 /////////////////////
@@ -466,7 +483,7 @@
     .sp {
         display: none;
     }
-    .l-top-section {
+    .p-top-top-section {
         padding-top: 100px;
         h2 {
             font-size: 1.5rem;
@@ -477,7 +494,7 @@
             padding: 11px 14px;
         }
     }
-    .p-progate-users {
+    .p-top-progate-users {
         margin-top: 12px;
         margin-bottom: 24px;
         img {
@@ -485,7 +502,7 @@
             margin-right: 4px;
             
         }
-        .p-users-total {
+        .p-top-users-total {
             margin-right: 7px;
         }
         p {
@@ -497,66 +514,74 @@
     }
 
 
-    .p-curriculum-section {
+    .p-top-curriculum-section {
         display: block;
-        padding: 15% 4.16%;
-        .p-subtitle-first {
+        padding: 15% 0;
+        .p-top-subtitle-first {
             font-size: 1.2rem;
         }
         h2 {
             display: inline-block;
             text-align: left;
             margin: 0;
+            margin-top: 24px;
             font-size: 18px;
+            padding: 0 6%;
         }
         p {
+            padding: 0 6%;
             text-align: left;
             font-size: 0.75rem;
+            margin-top: 8px;
         }
-        .p-curriculum-img-wrap {
-            margin: 0;
+        .p-top-curriculum-img-wrap {
+            padding-left: 6%;
             overflow: auto;
+            margin: 0;
             img {
                 width: 150%;
-                margin: 32px 0 20px;
+                margin: 56px 6% 0 0;
+            }
+            .p-top-curriculum-img-first {
+                margin-top: 24px;
             }
         }
     }
 
 
-    .p-success-story {
+    .p-top-success-story {
         h2 {
             font-size: 18px;
         }
-        .p-success-story-detail {
+        .p-top-success-story-detail {
             font-size: 0.75rem;
         }
-        .p-success-story-wrap {
+        .p-top-success-story-wrap {
             grid-template-columns: 1fr;
             grid-gap: 6vw;
             margin: 32px 0;
         }
-        .p-success-story-content {
+        .p-top-success-story-content {
             display: grid;
             grid-template-rows: repeat(2, auto);
             grid-template-columns: auto 1fr;
             padding: 24px 16px 0;
             max-width: 100%;
         }
-        .p-small {
+        .p-top-small {
             display: none;
         }
-        .p-person-img-wrap {
+        .p-top-person-img-wrap {
             grid-column: 1;
             margin-top: 18px;
             width: fit-content;
-            .p-person-img {
+            .p-top-person-img {
                 width: 50px;
                 height: 50px;
                 margin-top: 23px;
             }
         }
-        .p-success-story-text {
+        .p-top-success-story-text {
             margin-top: 0;
             grid-column: 1/3;
             grid-row: 1;
@@ -564,19 +589,19 @@
             // line-height: 170%;
             text-align: left;
         }
-        .p-writer-wrap {
+        .p-top-writer-wrap {
             align-items: flex-start;
             text-align: left;
             flex-direction: column;
             margin: 23px 0 0 12px;
             grid-column: 2;
-            .p-writer-name {
+            .p-top-writer-name {
                 grid-column: 2/3;
                 grid-row: 2;
                 font-size: 0.75rem;
                 margin-top: 0;
             }
-            .p-writer-country {
+            .p-top-writer-country {
                 grid-row: 3/4;
                 grid-column: 2/3;
                 font-size: 11px;
@@ -591,24 +616,24 @@
     }
 
 
-    .p-course {
+    .p-top-course {
         padding: 15% 6%;
     }
-    .p-course-wrap {
+    .p-top-course-wrap {
         grid-template-columns: 1fr;
         grid-gap: 6vw;
         margin-bottom: 16px;
     }
-    .p-course-total {
+    .p-top-course-total {
         grid-template-columns: 1fr;
         grid-gap: 0;
         grid-column: 1;
         padding-top: 48px;
         text-align: center;
-        .p-course-img-wrap {
+        .p-top-course-img-wrap {
             order: 2;
         }
-        .p-course-total-content {
+        .p-top-course-total-content {
             padding: 0;
             h2 {
                 font-size: 18px;
@@ -618,57 +643,57 @@
             }
         }
     }
-    .p-free-course, 
-    .p-pay-course {
+    .p-top-free-course, 
+    .p-top-pay-course {
         h2 {
             font-size: 18px;
         }
-        .p-free-course-detail, 
-        .p-pay-course-detail {
+        .p-top-free-course-detail, 
+        .p-top-pay-course-detail {
             font-size: 0.75rem;
             margin-top: 8px;
         }
-        .p-free-course-lesson, 
-        .p-pay-course-lesson {
+        .p-top-free-course-lesson, 
+        .p-top-pay-course-lesson {
             font-size: 0.75rem;
             margin-top: 40px;
 
         }
-        .p-free-course-fee, 
-        .p-pay-course-fee {
+        .p-top-free-course-fee, 
+        .p-top-pay-course-fee {
             font-size: 32px;
-            .p-pay-course-fee-attachment {
+            .p-top-pay-course-fee-attachment {
                 font-size: 12px;
             }
         }
     }
-    .p-dollar {
+    .p-top-dollar {
     font-size: 24px;
     }
-    .p-course-lesson-status {
+    .p-top-course-lesson-status {
         font-size: 0.75rem;
         margin-top: 8px;
     }
 
 
-    .p-mobile-app {
+    .p-top-mobile-app {
         display: block;
         text-align: center;
         padding: 0 6% 15% 6%;
         h2 {
             font-size: 18px;
         }
-        .p-mobile-app-detail {
+        .p-top-mobile-app-detail {
             font-size: 0.75rem;
             margin-top: 8px;
         }
-        .p-mobile-app-content-wrap {
+        .p-top-mobile-app-content-wrap {
             padding: 32px 7% 40px;
             flex-direction: column-reverse;
             margin-top: 40px;
         }
     }
-    .p-mobile-app-content-left {
+    .p-top-mobile-app-content-left {
         min-width: initial;
         margin-right: 0;
         h3 {
@@ -679,27 +704,27 @@
             font-size: 0.75rem;
             margin-top: 8px;
         }
-        .p-mobile-app-content-left-first {
+        .p-top-mobile-app-content-left-first {
             margin-top: 0;
         }
-        .p-mobile-app-content-left-second {
+        .p-top-mobile-app-content-left-second {
             margin-top: 24px;
         }
-        .p-download-type-img-wrap {
+        .p-top-download-type-img-wrap {
             margin: 40px 0 0;
-            .p-download-type-ios-wrap {
+            .p-top-download-type-ios-wrap {
                 margin-right: 12px;
             }
         }
     }
-    .p-mobile-app-content-right {
+    .p-top-mobile-app-content-right {
         max-width: 300px;
     }
 
 
-    .p-message {
+    .p-top-message {
         padding: 19% 6%;
-        .p-message-content {
+        .p-top-message-content {
             text-align: left;
             h2 {
                 font-size: 18px;
@@ -712,7 +737,7 @@
     }
 
 
-    .p-sgin-up {
+    .p-top-sgin-up {
         padding: 19% 6%;
         h2 {
             font-size: 18px;
@@ -730,10 +755,10 @@
     }
 
 
-    .p-sns {
+    .p-top-sns {
         padding: 32px 0;
-        .p-twitter-img-wrap, 
-        .p-facebook-img-wrap {
+        .p-top-twitter-img-wrap, 
+        .p-top-facebook-img-wrap {
             width: 20px;
         }
     }
@@ -741,12 +766,13 @@
 
     .l-footer {
         padding: 15px auto;
-        .p-footer-wrap {
+        .p-top-footer-wrap {
             text-align: center;
             margin-top: 15px;
             flex-direction: column;
+            align-items: center;
         }
-        .p-copyright {
+        .p-top-copyright {
             display: block;
             margin-top: 45px;
             font-size: 0.625rem;
@@ -756,43 +782,43 @@
             }
         }
     }
-    .p-both-sides {
+    .p-top-both-sides {
         width: auto;
         justify-content: center;
-        .p-footer-logo-img {
+        .p-top-footer-logo-img {
             margin: 10px auto 0;
             width: 125px;
             padding-bottom: 24px;
         }
-        .p-app-text {
+        .p-top-app-text {
             margin: 50px 0 10px;
             text-align: center;
         }
-        .p-download-type-img-wrap {
+        .p-top-download-type-img-wrap {
             margin: 0 auto 50px;
             justify-content: center;
-            .p-download-type-ios-wrap {
+            .p-top-download-type-ios-wrap {
                 margin: 0 10px 5px 0;
             }
         }
         h4 {
             margin-bottom: 15px;
         }
-        .p-business-logo-img-wrap-wrap {
+        .p-top-business-logo-img-wrap-wrap {
             margin: 0 auto;
             text-align: center;
         }
-        .p-bsiness-text {
+        .p-top-bsiness-text {
             display: block;
             margin: 20px auto 0;
         }
     }
-    .p-center {
+    .p-top-center {
         width: auto;
         h4 {
             font-size: 1.1rem;
         }
-        .p-center-content {
+        .p-top-center-content {
             li:last-child  {
                 margin-bottom: 40px;
             }

@@ -9,11 +9,11 @@
     width: 100%;
     padding: 24px 32px;
     background-color: #f9fbfe;
-    .p-header-logo-img {
+    .p-top-header-logo-img {
         width: 112px;
         height: 100%;
     }
-    .p-header-logo-small {
+    .p-top-header-logo-small {
         display: none;
     }
     .c-btn {
@@ -22,11 +22,14 @@
         padding: 11px 18px;
         max-width: 110px;
     }
-    .p-header-nav {
+    .p-top-header-nav {
         margin-left: auto;
         align-items: center;
         display: flex;
+        // li {
+        // }
         a {
+            display: flex;
             padding: 14px 16px;
             color: $subtitle-color;
             font-size: 14px;
@@ -41,18 +44,18 @@
         }
     }
 }
-.p-language {
+.p-top-language {
     position: relative;
     display: flex;
     flex-direction: column;
-    .p-language-text-wrap {
+    .p-top-language-text-wrap {
+        display: none;
         box-shadow: 0px 0px 20px #E4E7EA;
         position: absolute;
         top: 45px;
         left: 15px;
         width: 165px;
         height: 51px;
-        min-width: 165px;
         background-color: rgb(255, 255, 255);
         a {
             box-shadow: 0px 0px 20px #E4E7EA;
@@ -72,9 +75,6 @@
     }
 }
 
-// .active-language {
-
-// }
 
 
 
@@ -92,22 +92,22 @@
         .c-btn {
             padding: 7px 12;
         }
-        .p-header-logo-small {
+        .p-top-header-logo-small {
             display: inline-block;
             width: 20px;
         }
     }
-    .p-header-logo-img {
+    .p-top-header-logo-img {
         display: none;
     }
-    .p-header-nav {
+    .p-top-header-nav {
         a {
             font-size: 12px;
             padding: 0 8px;
         }
-    }
-    .p-small {
-        display: none;
+        .p-top-small {
+            display: none;
+        }
     }
     
 }
