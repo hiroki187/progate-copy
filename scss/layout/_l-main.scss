@@ -384,7 +384,6 @@
         align-items: flex-start;
         max-width: 970px;
         padding: 50px 0;
-        margin: 0 auto;
     }
     h4 {
         color: $subtitle-color;
@@ -392,6 +391,7 @@
     }
     .p-top-copyright {
         width: 100%;
+        padding: 0 15px;
         font-size: 0.625rem;
         color: $detail-color;
         text-align: left;
