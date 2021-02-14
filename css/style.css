@@ -770,6 +770,7 @@ a {
   .p-top-curriculum-section .p-top-curriculum-img-wrap img {
     width: 150%;
     margin: 56px 6% 0 0;
+    padding-right: 6%;
   }
   .p-top-curriculum-section .p-top-curriculum-img-wrap .p-top-curriculum-img-first {
     margin-top: 24px;
