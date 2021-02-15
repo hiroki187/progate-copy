@@ -1,0 +1,151 @@
+.l-footer {
+    background: #fff;
+    border-top: 1px solid #eee;
+    letter-spacing: 0.04em;
+    font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+    .p-top-footer-wrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 970px;
+        padding: 50px 0;
+    }
+    h4 {
+        color: $subtitle-color;
+        font-weight: normal;
+    }
+    .p-top-copyright {
+        width: 100%;
+        padding: 0 15px;
+        font-size: 0.625rem;
+        color: $detail-color;
+        text-align: left;
+    }
+}
+.p-top-both-sides {
+    width: 33.33333333%;
+    padding: 0 15px;
+    .p-top-footer-logo-img {
+        width: 144px;
+        height: 34px;
+        height: auto;
+        padding-bottom: 48px;
+    }
+    .p-top-app-text {
+        margin-top: 40px;
+    }
+    .p-top-download-type-img-wrap {
+        display: flex;
+        margin-top: 10px;
+    }
+    .p-top-download-type-ios-wrap {
+        margin-right: 10px;
+    }
+    .p-top-business-logo-img-wrap-wrap {
+        background-color: #fff;
+        box-shadow: rgba(0,0,0,0.12) 0 1px 6px, rgba(0,0,0,0.12) 0 1px 4px;
+        border-radius: 2px;
+        padding: 20px 15px;
+        max-width: 248px;
+        margin-top: 15px;
+        &:hover {
+            box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+        }
+    }
+    .p-top-bsiness-text {
+        max-width: 248px;
+        margin-top: 20px;
+        background-color: #f9fbfe;
+        border-radius: 2px;
+        padding: 20px 23px;
+        font-size: 0.75rem;
+        color: #8491a5;
+    }
+}
+.p-top-center {
+    width: 16.66666667%;
+    h4 {
+        font-size: 1.1rem;
+    }
+    li {
+        padding-top: 10px;
+    }
+    a {
+        font-size: 0.75rem;
+        color: #6783a0;
+        &:hover {
+            color: #44dcc0;
+        }
+    }
+    .p-top-footer-sns {
+        margin-top: 40px;
+    }
+}
+
+
+
+@include sp {
+    .l-footer {
+        padding: 15px auto;
+        width: auto;
+        .p-top-footer-wrap {
+            text-align: center;
+            margin-top: 15px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .p-top-copyright {
+            display: block;
+            margin-top: 45px;
+            font-size: 0.625rem;
+            text-align: center;
+            p {
+                display: inline-block;
+            }
+        }
+    }
+    .p-top-both-sides {
+        width: auto;
+        justify-content: center;
+        .p-top-footer-logo-img {
+            margin: 10px auto 0;
+            width: 125px;
+            padding-bottom: 24px;
+        }
+        .p-top-app-text {
+            margin: 50px 0 10px;
+            text-align: center;
+        }
+        .p-top-download-type-img-wrap {
+            margin: 0 auto 50px;
+            justify-content: center;
+            .p-top-download-type-ios-wrap {
+                margin: 0 10px 5px 0;
+            }
+        }
+        h4 {
+            margin-bottom: 15px;
+        }
+        .p-top-business-logo-img-wrap-wrap {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .p-top-bsiness-text {
+            display: block;
+            margin: 20px auto 0;
+        }
+    }
+    .p-top-center {
+        width: auto;
+        h4 {
+            font-size: 1.1rem;
+        }
+        .p-top-center-content {
+            li:last-child  {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
