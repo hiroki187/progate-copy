@@ -160,16 +160,14 @@ a {
     display: inline-block;
     width: 20px;
   }
-
-  .p-top-header-logo-img {
+  .l-header .p-top-header-logo-img {
     display: none;
   }
-
-  .p-top-header-nav a {
+  .l-header .p-top-header-nav a {
     font-size: 12px;
     padding: 0 8px;
   }
-  .p-top-header-nav .p-top-small {
+  .l-header .p-top-header-nav .p-top-small {
     display: none;
   }
 }
@@ -183,7 +181,7 @@ a {
 .p-top-top-section h2 {
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 50px;
   letter-spacing: 0.03em;
   line-height: 1.5;
   color: #2b546a;
@@ -715,7 +713,7 @@ a {
     padding-top: 100px;
   }
   .p-top-top-section h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .p-top-top-section .c-btn {
     font-size: 0.75rem;
@@ -746,7 +744,7 @@ a {
     padding: 15% 0;
   }
   .p-top-curriculum-section .p-top-subtitle-first {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .p-top-curriculum-section h2 {
     display: inline-block;
