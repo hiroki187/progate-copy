@@ -257,6 +257,7 @@ a {
 }
 .p-top-curriculum-section .p-top-curriculum-img-wrap {
   display: flex;
+  justify-content: center;
   margin-top: 72px;
   width: 100%;
 }
@@ -913,13 +914,14 @@ a {
   border-top: 1px solid #eee;
   letter-spacing: 0.04em;
   font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 .l-footer .p-top-footer-wrap {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  max-width: 970px;
   padding: 50px 0;
 }
 .l-footer h4 {

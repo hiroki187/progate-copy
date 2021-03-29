@@ -3,12 +3,13 @@
     border-top: 1px solid #eee;
     letter-spacing: 0.04em;
     font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+    display: flex;
+    justify-content: center;
     .p-top-footer-wrap {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         align-items: flex-start;
-        max-width: 970px;
         padding: 50px 0;
     }
     h4 {
