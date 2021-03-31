@@ -910,12 +910,12 @@ a {
   }
 }
 .l-footer {
+  display: flex;
+  justify-content: center;
   background: #fff;
   border-top: 1px solid #eee;
   letter-spacing: 0.04em;
   font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
-  display: flex;
-  justify-content: center;
 }
 .l-footer .p-top-footer-wrap {
   display: flex;
@@ -923,6 +923,7 @@ a {
   flex-wrap: wrap;
   align-items: flex-start;
   padding: 50px 0;
+  width: 1170px;
 }
 .l-footer h4 {
   color: #2b546a;
