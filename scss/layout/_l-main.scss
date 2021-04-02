@@ -29,6 +29,7 @@
         background: #88e7ce;
         display: flex;
         justify-content: center;
+        align-items: flex-start;
     }
     .p-top-top-img {
         overflow: hidden;
@@ -80,6 +81,7 @@
     .p-top-curriculum-img-wrap {
         display: flex;
         justify-content: center;
+        align-items: flex-start;
         margin-top: 72px;
         width: 100%;
         img {
@@ -195,6 +197,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: flex-start;
     }
     .p-top-course-total-content {
         display: flex;
@@ -450,6 +453,7 @@
             padding-left: 6%;
             overflow: auto;
             margin: 0;
+            justify-content: normal;
             img {
                 width: 150%;
                 margin: 56px 6% 0 0;

@@ -199,6 +199,7 @@ a {
   background: #88e7ce;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 .p-top-top-section .p-top-top-img {
   overflow: hidden;
@@ -258,6 +259,7 @@ a {
 .p-top-curriculum-section .p-top-curriculum-img-wrap {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   margin-top: 72px;
   width: 100%;
 }
@@ -379,6 +381,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 .p-top-course-total .p-top-course-total-content {
   display: flex;
@@ -674,6 +677,7 @@ a {
     padding-left: 6%;
     overflow: auto;
     margin: 0;
+    justify-content: normal;
   }
   .p-top-curriculum-section .p-top-curriculum-img-wrap img {
     width: 150%;
