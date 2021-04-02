@@ -170,6 +170,9 @@ a {
   .l-header .p-top-header-nav .p-top-small {
     display: none;
   }
+  .l-header .p-top-language-text-wrap a {
+    padding: 14px 20px;
+  }
 }
 .p-top-top-section {
   padding-top: 136px;
